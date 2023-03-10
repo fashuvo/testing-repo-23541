@@ -1,5 +1,8 @@
 name: Workflow Test
 
+concurrency:
+    group: compressed-size-${{ github.ref }}
+
 on:
     push:
     pull_request:
