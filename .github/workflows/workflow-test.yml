@@ -17,7 +17,7 @@ jobs:
         steps:
             - name: Use desired version of NodeJS
               run: |
-                echo "Test job starts"
+                echo ${{ github.ref }}
                 sleep 1m
                 echo "Test job continues"
                 sleep 1m
