@@ -1,4 +1,4 @@
-name: Workflow Testing
+name: Workflow Testing done
 
 concurrency:
     group: compressed-size-${{ github.ref }}
