@@ -1,7 +1,8 @@
-name: Workflow Testing done
+name: Workflow Testing done final
 
 concurrency:
     group: compressed-size-${{ github.ref }}
+    cancel-in-progress: true
 
 on:
     push:
