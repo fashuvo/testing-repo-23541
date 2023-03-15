@@ -1,0 +1,12 @@
+name: Test workflow for issues
+on: 
+  pull_request:
+  workflow_dispatch:
+jobs:
+  Print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "Hi there!"
+      - name: Print event details
+        run: echo "${{toJSON(github)}}"
