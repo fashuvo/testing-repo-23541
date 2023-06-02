@@ -15,7 +15,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Use desired version of NodeJS
+            - name: Use desired version of NodeJS in this action
               run: |
                 echo ${{ github.ref }}
                 sleep 1m
